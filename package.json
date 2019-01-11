@@ -1,0 +1,31 @@
+{
+  "name": "lvcnf",
+  "description": "lvcnf",
+  "version": "0.0.1",
+  "author": {
+    "name": "Zac Anger",
+    "email": "zac@zacanger.com",
+    "url": "https://zacanger.com"
+  },
+  "bugs": "https://github.com/zacanger/lvcnf/issues",
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "homepage": "https://github.com/zacanger/lvcnf#readme",
+  "keywords": [
+    "",
+    "lvcnf"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zacanger/lvcnf.git"
+  },
+  "scripts": {
+    "start": "node index",
+    "test": ""
+  }
+}
