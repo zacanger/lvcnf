@@ -1,3 +1,17 @@
-const thing = require('./.build/Release/thing.node')
+const _ = require('lodash')
 
-module.exports = ({ key, val }) => !!thing(`${key}=${val}`)
+class Config {
+  constructor (initalConfig = {}) {
+    this.config = initalConfig
+  }
+
+  set (path, value) {
+    _.set(this.config, path, value)
+  }
+
+  get (path) {
+    return _.get(this.config, path)
+  }
+}
+
+module.exports = Config
