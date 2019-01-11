@@ -10,7 +10,11 @@ class Config {
   }
 
   get (path) {
-    return _.get(this.config, path)
+    return path ? _.get(this.config, path) : this.config
+  }
+
+  delete (path) {
+    delete this.config[path]
   }
 }
 
