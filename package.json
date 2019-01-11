@@ -1,6 +1,6 @@
 {
   "name": "lvcnf",
-  "description": "lvcnf",
+  "description": "A library for live configuration changes.",
   "version": "0.0.1",
   "author": {
     "name": "Zac Anger",
@@ -15,8 +15,10 @@
   },
   "homepage": "https://github.com/zacanger/lvcnf#readme",
   "keywords": [
-    "",
-    "lvcnf"
+    "config",
+    "configuration",
+    "reload",
+    "live"
   ],
   "license": "MIT",
   "main": "index.js",
