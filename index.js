@@ -16,6 +16,14 @@ class Config {
   delete (path) {
     delete this.config[path]
   }
+
+  overwrite (newConfig) {
+    this.config = newConfig
+  }
+
+  merge (newConfig) {
+    this.config = _.merge(this.config, newConfig)
+  }
 }
 
 module.exports = Config
