@@ -3,14 +3,14 @@
   "description": "A library for live configuration changes.",
   "version": "1.1.0",
   "author": {
-    "name": "Zac Anger",
     "email": "zac@zacanger.com",
+    "name": "Zac Anger",
     "url": "https://zacanger.com"
   },
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "preversion": "npm t",
+    "preversion": "npm t && sortpack",
     "test": "npm run test:lint && npm run test:tape",
     "test:lint": "eslint -c .eslintrc.json *.js",
     "test:tape": "tape test.js"
@@ -32,13 +32,14 @@
   },
   "devDependencies": {
     "babel-eslint": "10.0.1",
-    "eslint": "5.13.0",
+    "eslint": "5.15.1",
     "eslint-config-zacanger": "3.4.2",
     "eslint-plugin-babel": "5.3.0",
     "eslint-plugin-import": "2.16.0",
     "eslint-plugin-node": "8.0.1",
     "eslint-plugin-promise": "4.0.1",
     "eslint-plugin-unicorn": "7.1.0",
+    "sortpack": "1.1.3",
     "tape": "4.10.1"
   },
   "engines": {
